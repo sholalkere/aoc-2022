@@ -53,6 +53,7 @@ to_consider = tuple(valve for valve in flow_rate if flow_rate[valve] > 0)
 a = dfs("AA", 30, to_consider)
 print(a)
 
+# copied from https://github.com/betaveros/advent-of-code-2022/blob/main/p16.noul
 def dfs2(curr, time, remaining):
     res = dfs("AA", 26, remaining)
     remaining = list(remaining)
